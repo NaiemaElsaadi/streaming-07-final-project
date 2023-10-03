@@ -26,14 +26,14 @@ This program is useful for analyzing and categorizing housing data efficiently, 
 
 The project utilizes synthetic housing data generated using the Faker library. This synthetic data includes details such as price, area, and the number of bedrooms. While real data could be used, synthetic data ensures privacy and reproducibility for testing and development.
 
-* Source Data for csv file:
+<br><b> Source Data for csv file:</b>
 
 https://www.kaggle.com/datasets/yasserh/housing-prices-dataset
 
 
 ## Prerequisites
 
-Before running the project, ensure you have the following prerequisites:
+<b>Before running the project, ensure you have the following prerequisites:</b>
 
 - Git
 - RabbitMQ server running
@@ -45,30 +45,29 @@ Before running the project, ensure you have the following prerequisites:
 <br>csv
 <br>webbrowser
 <br>time 
-
 - Required Python libraries (e.g., pika) installed in your active environment
 
 ## How to Run
 
-Follow these steps to run the project:
+<b>Follow these steps to run the project:</b>
 
 1. Clone the repository to your local machine:
 2. Navigate to the project directory:
 3. Start the producer to collect sending housing data:
 4. Open separate terminal windows and start the producer and consumer for housing data:
 
-<br>Housing_producer:python housing_producer.py
+<br><b>Housing_producer:python housing_producer.py</b>
 
 ![My Screenshot](housing_producer.png)
 
-<br>Housing_consumer:python housing_listener.py
+<br><b>Housing_consumer:python housing_listener.py</b>
 
 ![My Screenshot](housing_listener.png)
 
 
 ## Project Structure
 
-The project structure is organized as follows:
+<b>The project structure is organized as follows:</b>
 <br> streaming-05-getting-started/
 <br> housing_producer.py
 <br> housing_listener.py
@@ -101,7 +100,7 @@ The project's results can be observed without the need to execute Python code. T
 
 ## How It Works
 
-Producer Script (housing_producer.py):
+<b>Producer Script (housing_producer.py):</b>
 
 The producer script reads housing data from a CSV file containing information about various houses, including their prices, areas, and the number of bedrooms.It establishes a connection to a RabbitMQ server, where it sends messages to different queues depending on the characteristics of each house:
 
@@ -125,20 +124,31 @@ This program is useful for analyzing and categorizing housing data efficiently, 
 ## Screenshots
 
 ## Producer and Consumers
-<br>Here is a screenshots of the multiple terminals with producer and consumers.
+<br><b>Here is a screenshots of the multiple terminals with producer and consumer.</b>
 
+<br><b> housing producer</b>
 ![My Screenshot](housing_producer.png)
+
+<br><b> housing consumer</b>
 ![My Screenshot](housing_listener.png)
+
+<br><b> multiple terminals</b>
 ![My Screenshot](housing.png)
 
 
 
 ## RabbitMQ Console
 
-<br>Here is a screenshot of the RabbitMQ console with the producer and consumers running, showing message queues and message traffic:
+<br>Here is a screenshot of the RabbitMQ console with the producer and consumer running, showing message queues and message traffic:
 
 ![Streaming in Action](RabbitMQ.png)
+
+<br><b>Screenshot for running the housing_producer:</b>
+
 ![Streaming in Action](RabbitMQ_producer1.png)
+
+<br><b>Screenshot for running the housing_consumer</b>
+
 ![Streaming in Action](RabbitMQ_listening.png)
 
 
